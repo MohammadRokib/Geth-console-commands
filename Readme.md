@@ -16,4 +16,4 @@ This command returns the balance of a specific account. It is typed as ```eth.ge
 ```
 eth.getBalance("0xe4e557bc95ad7bc81c458746a67e019125c5afb0")
 ```
-After running this command the console will return the balance of this account ```0xe4e557bc95ad7bc81c458746a67e019125c5afb0``` which is a public key of the account.
+After running this command the console will return the balance of this account ```0xe4e557bc95ad7bc81c458746a67e019125c5afb0``` which is the public key of the account.
