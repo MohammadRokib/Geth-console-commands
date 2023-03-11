@@ -25,6 +25,8 @@ After running this command the console will return the balance of this account `
 
 ## admin.
 
+### admin.addPeer
+Explain the function example 
 <br><br>
 
 ## miner.
