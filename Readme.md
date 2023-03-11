@@ -3,7 +3,7 @@
 ## eth.
 
 ### eth.accounts
-This command returns all the public keys of the existing accounts in the blockchain.
+This command returns all the public keys of the existing accounts in the blockchain. Example:
 
 ```
 eth.accounts
