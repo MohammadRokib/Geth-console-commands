@@ -30,9 +30,8 @@ This command is used in the Geth client for Ethereum to manually add a new peer 
 
 ```
 admin.addPeer("enode://1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z@192.168.0.100:30303")
-
 ```
-Here
+Here,<br>
 ```enode://1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z@192.168.0.100:30303``` is the argument to the addPeer command, which is a string representing the enode URL of the peer to be added.
 
 ```1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6z``` is a placeholder for the enode information of the peer, which consists of the node's public key and other identifying information. This information is used by the node to establish a direct connection with the peer.
@@ -40,7 +39,7 @@ Here
 ```192.168.0.100``` is the IP address of the peer.
 
 ```30303``` is the port number of the peer's Ethereum network interface
-<br>
+<br><br>
 
 ### admin.importChain
 The 'admin.importChain' command is used in Ethereum to import a previously exported blockchain data file into a new node.Example
