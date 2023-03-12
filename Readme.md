@@ -14,6 +14,10 @@ eth.accounts
 
 <br>
 
+### eth.call
+
+<br>
+
 ### eth.getBalance()
 This command returns the balance of a specific account. It is typed as ```eth.getBalance("public_key_of_the_account")``` Example:
 
