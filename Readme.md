@@ -40,7 +40,7 @@ Here
 ```192.168.0.100``` is the IP address of the peer.
 
 ```30303``` is the port number of the peer's Ethereum network interface
-
+<br>
 
 ### admin.importChain
 The 'admin.importChain' command is used in Ethereum to import a previously exported blockchain data file into a new node
