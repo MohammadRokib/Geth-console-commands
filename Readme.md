@@ -43,7 +43,13 @@ Here
 <br>
 
 ### admin.importChain
-The 'admin.importChain' command is used in Ethereum to import a previously exported blockchain data file into a new node
+The 'admin.importChain' command is used in Ethereum to import a previously exported blockchain data file into a new node.Example
+```
+admin.importChain("/home/user/exported_data/mychaindata.zip")
+```
+Here 
+```/home/user/exported_data/mychaindata.zip```  is the argument to the importChain command, which is a string representing the file path of the exported blockchain data file.
+The file should be in the .zip format.
 
  
 <br><br>
