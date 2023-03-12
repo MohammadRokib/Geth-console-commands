@@ -47,7 +47,7 @@ The 'admin.importChain' command is used in Ethereum to import a previously expor
 ```
 admin.importChain("/home/user/exported_data/mychaindata.zip")
 ```
-Here 
+Here <br>
 ```/home/user/exported_data/mychaindata.zip```  is the argument to the importChain command, which is a string representing the file path of the exported blockchain data file.
 The file should be in the .zip format.
 
