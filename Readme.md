@@ -66,6 +66,7 @@ Here,<br>
 'host' argument specifies the IP address or hostname of the network interface on which the RPC server should listen<br>
 'cors' argument specifies a list of allowed CORS (Cross-Origin Resource Sharing) domains<br>
 'apis' argument specifies a list of available APIs (Application Programming Interfaces) for the RPC server<br>
+cd
 
 Example:
 ```
