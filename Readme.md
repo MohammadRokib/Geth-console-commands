@@ -66,13 +66,39 @@ Here,<br>
 'host' argument specifies the IP address or hostname of the network interface on which the RPC server should listen<br>
 'cors' argument specifies a list of allowed CORS (Cross-Origin Resource Sharing) domains<br>
 'apis' argument specifies a list of available APIs (Application Programming Interfaces) for the RPC server<br>
-cd
+
 
 Example:
 ```
 admin.startRPC(8545, "0.0.0.0", "*", ["eth", "net"])
 ```
 <br><br>
+
+### admin.isPrototypeOf
+The 'admin.isPrototypeOf' method is used in the JavaScript implementation of the Ethereum client to determine if a given object is an instance of the admin object or one of its prototypes.Example
+
+```var myObject = {}
+console.log(admin.isPrototypeOf(myObject)); // Output: false
+
+function MyContract() {}
+MyContract.prototype = Object.create(admin);
+var myContract = new MyContract();
+console.log(admin.isPrototypeOf(myContract)); // Output: true
+```
+
+Here,
+```var myObject = {}```   This creates a new JavaScript object called myObject using object literal notation.<br>
+```console.log(admin.isPrototypeOf(myObject));```   This calls the admin.isPrototypeOf() method to check if the admin object is a prototype of myObject. Since myObject is not an instance of admin or one of its prototypes, the method returns false.<br>
+```function MyContract() {}```  This declares a new constructor function called MyContract.<br>
+```MyContract.prototype = Object.create(admin);```   This sets the prototype property of MyContract to a new object created by calling Object.create() with admin as its argument. This sets up the prototype chain so that MyContract inherits from admin.<br>
+```var myContract = new MyContract();```   This creates a new instance of MyContract called myContract.<br>
+```console.log(admin.isPrototypeOf(myContract));```   This calls the admin.isPrototypeOf() method to check if the admin object is a prototype of myContract. Since myContract is an instance of MyContract, which inherits from admin, the method returns true.
+
+<br><br>
+
+
+
+
 
 ## miner.
 
