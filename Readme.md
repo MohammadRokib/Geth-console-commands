@@ -86,7 +86,7 @@ var myContract = new MyContract();
 console.log(admin.isPrototypeOf(myContract)); // Output: true
 ```
 
-Here,
+Here,<br>
 ```var myObject = {}```   This creates a new JavaScript object called myObject using object literal notation.<br>
 
 ```console.log(admin.isPrototypeOf(myObject));```   This calls the admin.isPrototypeOf() method to check if the admin object is a prototype of myObject. Since myObject is not an instance of admin or one of its prototypes, the method returns false.<br>
@@ -100,6 +100,23 @@ Here,
 ```console.log(admin.isPrototypeOf(myContract));```   This calls the admin.isPrototypeOf() method to check if the admin object is a prototype of myContract. Since myContract is an instance of MyContract, which inherits from admin, the method returns true.
 
 <br><br>
+
+### admin.startWS
+The 'admin.startWS' method is used in the Ethereum administrative module (admin) to start a WebSocket server that can be used to communicate with a running Ethereum client.Example:
+```
+admin.startWS(8546, "localhost", "*", ["web3", "net"]);
+```
+Here,<br>
+```8546```  is the port number on which to start the WebSocket server.<br>
+
+```localhost```  is the hostname or IP address on which to listen for incoming connections. If not specified, the server listens on all available network interfaces.<br>
+
+ ```*```                 is a comma-separated list of origins that are allowed to make cross-origin requests to the WebSocket server. If not specified, CORS is disabled.<br>
+ 
+ ```["web3", "net"]```   is an  array of APIs that should be exposed over the WebSocket server. If not specified, all APIs are exposed.<br>
+ 
+ <br><br>
+
 
 
 
