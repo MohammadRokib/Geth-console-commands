@@ -88,10 +88,15 @@ console.log(admin.isPrototypeOf(myContract)); // Output: true
 
 Here,
 ```var myObject = {}```   This creates a new JavaScript object called myObject using object literal notation.<br>
+
 ```console.log(admin.isPrototypeOf(myObject));```   This calls the admin.isPrototypeOf() method to check if the admin object is a prototype of myObject. Since myObject is not an instance of admin or one of its prototypes, the method returns false.<br>
+
 ```function MyContract() {}```  This declares a new constructor function called MyContract.<br>
+
 ```MyContract.prototype = Object.create(admin);```   This sets the prototype property of MyContract to a new object created by calling Object.create() with admin as its argument. This sets up the prototype chain so that MyContract inherits from admin.<br>
+
 ```var myContract = new MyContract();```   This creates a new instance of MyContract called myContract.<br>
+
 ```console.log(admin.isPrototypeOf(myContract));```   This calls the admin.isPrototypeOf() method to check if the admin object is a prototype of myContract. Since myContract is an instance of MyContract, which inherits from admin, the method returns true.
 
 <br><br>
