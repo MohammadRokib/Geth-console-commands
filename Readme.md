@@ -116,6 +116,20 @@ Here,<br>
  ```["web3", "net"]```   is an  array of APIs that should be exposed over the WebSocket server. If not specified, all APIs are exposed.<br>
  
  <br><br>
+ 
+ 
+ ### admin.datadir
+ The 'admin.datadir' method is used in the Ethereum administrative module (admin) to retrieve the data directory used by the running Ethereum client.Example:
+ 
+ ```
+ console.log(admin.datadir);
+ ```
+ Here,<br>
+The  ```admin.datadir```  method is used to retrieve the data directory used by the Ethereum client. The resulting string is then printed to the console using ```console.log()```.
+
+
+<br><br>
+
 
 
 
