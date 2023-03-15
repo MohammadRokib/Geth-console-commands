@@ -130,6 +130,18 @@ The  ```admin.datadir```  method is used to retrieve the data directory used by 
 
 <br><br>
 
+### admin.nodeInfo
+
+The admin.nodeInfo method is used in the Ethereum administrative module (admin) to retrieve information about the running Ethereum client.Example:
+
+```
+console.log(admin.nodeInfo);
+```
+Here,<br>
+```admin.nodeInfo```  method is used to retrieve information about the running Ethereum client. The resulting object is then printed to the console using ```console.log()```
+
+<br><br>
+
 
 
 
