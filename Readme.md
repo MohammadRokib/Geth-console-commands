@@ -59,6 +59,95 @@ Here <br>
 The file should be in the .zip format.
 <br><br>
 
+### admin.startRPC
+The 'admin.startRPC' command in Ethereum is used to start an RPC (Remote Procedure Call) server on the node, which allows remote clients to interact with the node over the network.It is typed as admin.startRPC(port, host, cors, apis)<br>
+Here,<br>
+```port``` argument specifies the TCP port number on which the RPC server should listen for incoming connections<br>
+```host``` argument specifies the IP address or hostname of the network interface on which the RPC server should listen<br>
+```cors``` argument specifies a list of allowed CORS (Cross-Origin Resource Sharing) domains<br>
+```apis``` argument specifies a list of available APIs (Application Programming Interfaces) for the RPC server<br>
+
+
+Example:
+```
+admin.startRPC(8545, "0.0.0.0", "*", ["eth", "net"])
+```
+<br><br>
+
+### admin.isPrototypeOf
+The 'admin.isPrototypeOf' method is used in the JavaScript implementation of the Ethereum client to determine if a given object is an instance of the admin object or one of its prototypes.Example
+
+```var myObject = {}
+console.log(admin.isPrototypeOf(myObject)); // Output: false
+
+function MyContract() {}
+MyContract.prototype = Object.create(admin);
+var myContract = new MyContract();
+console.log(admin.isPrototypeOf(myContract)); // Output: true
+```
+
+Here,<br>
+```var myObject = {}```   This creates a new JavaScript object called myObject using object literal notation.<br>
+
+```console.log(admin.isPrototypeOf(myObject));```   This calls the admin.isPrototypeOf() method to check if the admin object is a prototype of myObject. Since myObject is not an instance of admin or one of its prototypes, the method returns false.<br>
+
+```function MyContract() {}```  This declares a new constructor function called MyContract.<br>
+
+```MyContract.prototype = Object.create(admin);```   This sets the prototype property of MyContract to a new object created by calling Object.create() with admin as its argument. This sets up the prototype chain so that MyContract inherits from admin.<br>
+
+```var myContract = new MyContract();```   This creates a new instance of MyContract called myContract.<br>
+
+```console.log(admin.isPrototypeOf(myContract));```   This calls the admin.isPrototypeOf() method to check if the admin object is a prototype of myContract. Since myContract is an instance of MyContract, which inherits from admin, the method returns true.
+
+<br><br>
+
+### admin.startWS
+The 'admin.startWS' method is used in the Ethereum administrative module (admin) to start a WebSocket server that can be used to communicate with a running Ethereum client.Example:
+```
+admin.startWS(8546, "localhost", "*", ["web3", "net"]);
+```
+Here,<br>
+```8546```  is the port number on which to start the WebSocket server.<br>
+
+```localhost```  is the hostname or IP address on which to listen for incoming connections. If not specified, the server listens on all available network interfaces.<br>
+
+ ```*```                 is a comma-separated list of origins that are allowed to make cross-origin requests to the WebSocket server. If not specified, CORS is disabled.<br>
+ 
+ ```["web3", "net"]```   is an  array of APIs that should be exposed over the WebSocket server. If not specified, all APIs are exposed.<br>
+ 
+ <br><br>
+ 
+ 
+ ### admin.datadir
+ The 'admin.datadir' method is used in the Ethereum administrative module (admin) to retrieve the data directory used by the running Ethereum client.Example:
+ 
+ ```
+ console.log(admin.datadir);
+ ```
+ Here,<br>
+The  ```admin.datadir```  method is used to retrieve the data directory used by the Ethereum client. The resulting string is then printed to the console using ```console.log()```.
+
+
+<br><br>
+
+### admin.nodeInfo
+
+The admin.nodeInfo method is used in the Ethereum administrative module (admin) to retrieve information about the running Ethereum client.Example:
+
+```
+console.log(admin.nodeInfo);
+```
+Here,<br>
+```admin.nodeInfo```  method is used to retrieve information about the running Ethereum client. The resulting object is then printed to the console using ```console.log()```
+
+<br><br>
+
+
+
+
+
+
+
 ## miner.
 
 <br><br>
