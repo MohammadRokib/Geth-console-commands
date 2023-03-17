@@ -60,7 +60,7 @@ The file should be in the .zip format.
 <br><br>
 
 ### admin.startRPC
-The 'admin.startRPC' command in Ethereum is used to start an RPC (Remote Procedure Call) server on the node, which allows remote clients to interact with the node over the network.It is typed as admin.startRPC(port, host, cors, apis)<br>
+The 'admin.startRPC' command in Ethereum is used to start an RPC (Remote Procedure Call) server on the node, which allows remote clients to interact with the node over the network.It is typed as ```admin.startRPC(port, host, cors, apis)```<br>
 Here,<br>
 ```port``` argument specifies the TCP port number on which the RPC server should listen for incoming connections<br>
 ```host``` argument specifies the IP address or hostname of the network interface on which the RPC server should listen<br>
