@@ -29,6 +29,37 @@ After running this command the console will return the balance of this account `
 
 ## personal.
 
+### personal._requestManager
+
+The personal._requestManager code appears to be related to the Ethereum blockchain platform and its web3.py library. The personal object is part of the web3.py library and provides a set of methods for interacting with the Ethereum personal API, which allows users to manage their Ethereum accounts and sign transactions.
+
+The _requestManager attribute is used internally by the web3.py library to manage JSON-RPC requests to the Ethereum node. It is not typically used directly by developers, but is instead accessed through higher-level methods provided by the web3.py library.example: <br>
+
+```
+const Web3 = require('web3');
+const web3 = new Web3('https://mainnet.infura.io/v3/your-project-id');
+
+const accountAddress = '0x1234567890123456789012345678901234567890';
+const accountPassword = 'your-account-password';
+const message = 'hello world';
+
+// Use personal._requestManager to call personal_sign method
+web3.eth.personal._requestManager.request('personal_sign', [message, accountAddress, accountPassword])
+  .then(signedMessage => {
+    console.log(signedMessage);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+```
+here,<br>
+In this example, we create a Web3 instance with a connection to the Ethereum mainnet using Infura as the provider. We then specify an Ethereum account address and password, and a message that we want to sign.
+
+We use the personal._requestManager attribute to call the personal_sign method, passing in the message, account address, and password as parameters. The _requestManager object handles the JSON-RPC request to the Ethereum node and returns a Promise that resolves with the signed message.
+
+Finally, we log the signed message to the console if the Promise resolves successfully, or log any errors if the Promise rejects. Note that this is just an example, and the specific usage of the personal._requestManager attribute may vary depending on your specific needs and requirements.
+
+
 <br><br>
 
 ## admin.
