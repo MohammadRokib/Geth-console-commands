@@ -60,6 +60,59 @@ Finally, we log the signed message to the console if the Promise resolves succes
 
 
 <br><br>
+### personal.getListWallets
+
+The personal.getListWallets method is a function provided by the personal module in web3.py that returns a list of Ethereum account addresses that are managed by the connected node's wallet.
+
+```
+const Web3 = require('web3');
+const web3 = new Web3('https://mainnet.infura.io/v3/your-project-id');
+
+// Use personal.getListWallets to get a list of wallet addresses
+web3.eth.personal.getListWallets()
+  .then(walletAddresses => {
+    console.log(walletAddresses);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+```
+
+here,<br>
+In this example, we create a Web3 instance with a connection to the Ethereum mainnet using Infura as the provider. We then use the personal.getListWallets method to get a list of Ethereum account addresses that are managed by the connected node's wallet.
+
+The getListWallets method returns a Promise, which resolves with the list of wallet addresses if the method call is successful. We use the .then() method to handle the successful resolution of the Promise, and log the list of wallet addresses to the console.
+
+If an error occurs during the method call, the Promise will be rejected and we use the .catch() method to handle the error and log it to the console.
+
+Note that this is just an example, and the specific usage of personal.getListWallets may vary depending on your specific needs and requirements.
+<br><br>
+
+### personal.newAccount
+
+The personal.newAccount method is a function provided by the personal module in web3.py that creates a new Ethereum account with a specified password.
+```
+const Web3 = require('web3');
+const web3 = new Web3('https://mainnet.infura.io/v3/your-project-id');
+
+// Use personal.newAccount to create a new Ethereum account with a password
+web3.eth.personal.newAccount('your-new-account-password')
+  .then(newAccount => {
+    console.log(newAccount);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+```
+here,<br>
+In this example, we create a Web3 instance with a connection to the Ethereum mainnet using Infura as the provider. We then use the personal.newAccount method to create a new Ethereum account with a specified password.
+
+The newAccount method returns a Promise, which resolves with the address of the new account that was created if the method call is successful. We use the .then() method to handle the successful resolution of the Promise, and log the address of the new account to the console.
+
+If an error occurs during the method call, the Promise will be rejected and we use the .catch() method to handle the error and log it to the console.
+
+Note that this is just an example, and the specific usage of personal.newAccount may vary depending on your specific needs and requirements. Additionally, you should be careful when creating new accounts, as they can be a security risk if not properly secured.
+<br><br>
 
 <br><br>
 
